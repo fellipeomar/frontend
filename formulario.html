@@ -1,106 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="contato.css">
 
-<title> CSS externo - Formulário - 13, 17, 24/04 </title>
-<link rel="stylesheet" href="formulario.css">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="logo.png">
+            <h1 class="titulo-principal"> loja tematica</h1>
+        </header>
 
-</head>
+        <main>
+            <form>
+                <h3><label for="nomesobrenome">Nome e Sobrenome</label></h3>
+                <input type="text" name="nome" id="nomesobrenome" 
+                class="input-padrao" placeholder="Seu Nome e Sobrenome" required >
+                <br></br>
+                <label for="email" class="labelinput">Email</label>
+                <input type="text" name="email" id="email"
+                class="input-padro" placeholder="seuemail@dominio.com" required>
+                <br><br>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone"
+                class="input-padrao" placeholder="(xx)xxxxx-xxxx"required>
+                <br></br>
+                <label for="mensagem">mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem"
+                placeholder="Digite seu texto aqui." required></textarea>
 
-<body>
-<header> <!--Cabeçalho--> </header>
+                <section>
+                    <p>Como prefere nosso Contato</p>
+                    <input type="radio" name="contato" value="email"
+                    id="radio-email">
+                    <label for="radio-email">Email</label>
 
-<main> <!--Meio--> 
+                    <input type="radio" name="contato" value="telefone"
+                    id="radio-telefone">
+                    <label for="radio-telefone">Telefone</label>
 
-     
+                    <input type="radio" name="contato" value="whatsapp"
+                    id="radio-whatsapp">
+                    <label for="radio-whatsapp">Whatsapp</label>
+                </section>
 
-<section class="box">
-    <form>
-    <fieldset>
-    <legend> <strong>
-        Formulário de clientes
-    </legend></strong>
-<section class="inputBox">
-    <input type="text" name="nome" id="name"
-    class="inputUser" required>
-    <label for="name" class="labelinput">Nome completo</label>
-</section>
+                <section>
+                    <p>Qual horario para ser atendido?</p>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </section>
+                <br>
+                <label class="checkbox">
+                <input type="checkbox">Gostaria de receber nossas novidades por email?</label>
 
-    <br><br>
-
-<section class="inputBox">
-    <input type="text" name="email" id="email"
-    class="inputUser" required >
-    <label for="email" class="labelinput">
-    Email</label>
-    </section>
-
-    <br><br>
-
-<section class="inputBox">
-    <input type="tel" name="telefone" id="telefone"
-    class="inputUser" required >
-    <label for="telefone" class="labelinput">
-    Telefone</label>
-
-    <p>Sexo:</p>
-    <input type="radio" name="genero" id="feminino"
-    value="feminino" required>
-    <label for="feminino">Feminino</label>
-    <br>
-
-    <input type="radio" name="genero" id="masculino"
-    value="masculino" required>
-    <label for="masculino">Masculino</label>
-    <br>
-
-    <input type="radio" name="genero" id="outro"
-    value="outro" required>
-    <label for="outro">Outro</label>
-    <br><br><br>
-
-    <label for="data_nascimento"><strong>Ano de Nascimento</strong></label>
-    <input type="date" name="data_nascimento" id="data_nascimento"required>
-    <br><br><br>
-
-<section class="inputBox">
-    <input type="text" name="cidade" id="cidade"
-    class="inputUser" required>
-    <label for="cidade" class="labelinput">Cidade</label>
-</section>
-
-    <br><br>
-         
-<section class="inputBox">
-    <input type="text" name="estado" id="estado"
-    class="inputUser" required>
-    <label for="estado" class="labelinput">Estado</label>
-</section>
-
-    <br><br>
-
-<section class="inputBox">
-    <input type="text" name="endereco" id="endereco"
-    class="inputUser" required>
-    <label for="endereco" class="labelinput">Endereço</label>
-</section>
-
-         <br><br>
-
-<section>
-    <input type="submit" value="Enviar Formulário" id="submit"
-    class="inputUser">
-</section>
-
-</section>
-</section>
-</fieldset>
-</form>
-</main>
-<footer> <!--Rodapé--> </footer>
+                <input type="submit" value="Envia formulário" class="enviar">
+            </form>
+        </main>
 
 
+        <footer>
+            <img id="logo" src="logo.png">
+            <p class="copyright">&copy; copyright -- Fellipe Omar</p>
+        </footer>
 
-</body>
-</html>
+    </body>
+
+
+	
